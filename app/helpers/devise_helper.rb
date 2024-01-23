@@ -16,7 +16,6 @@ module DeviseHelper
 
     html = <<-HTML
       <div class="bg-red-100 border-l-4 border-red-500 mb-4 p-4 text-red-700" role="alert">
-          <p class="font-bold">Oops!</p>
           <p>#{sentence}</p>#{messages}
       </div>
     HTML
@@ -32,7 +31,6 @@ module DeviseHelper
       message =  resource.errors.full_messages[0]
       html = <<-HTML
         <div class="bg-red-lightest border-l-4 border-red text-orange-dark p-4" role="alert">
-          <p class="font-bold">#{sentence}</p>
           <p> #{message}.</p>
         </div>
       HTML
@@ -41,7 +39,6 @@ module DeviseHelper
                          .join
       html = <<-HTML
         <div class="bg-red-100 border-l-4 border-red-500  mb-4 p-4 text-red-700" role="alert">
-          <p class="font-bold">#{sentence}</p>
           <ul class="list-disc">
             #{messages}
           </ul>
