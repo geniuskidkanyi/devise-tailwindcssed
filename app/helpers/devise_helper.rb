@@ -26,7 +26,7 @@ module DeviseHelper
   def devise_simple_error_messages!
     return if resource.errors.empty?
 
-    sentence = "Ooops!"
+    sentence = ""
     if resource.errors.count == 1
       message =  resource.errors.full_messages[0]
       html = <<-HTML
