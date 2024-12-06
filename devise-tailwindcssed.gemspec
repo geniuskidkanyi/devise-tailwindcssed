@@ -48,7 +48,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.6", "< 3.4"
   # rubocop:enable  Gemspec/RequiredRubyVersion
 
-  spec.add_dependency "rails", ">= 5.2.3.4", "< 8,2"
+  spec.add_dependency "rails", ">= 5.2.3.4", "< 8.2"
   spec.add_runtime_dependency "railties", "> 4.0", "< 8.2"
 
   spec.extra_rdoc_files = Dir["README*", "LICENSE*"]
